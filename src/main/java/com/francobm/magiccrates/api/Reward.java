@@ -71,22 +71,6 @@ public class Reward {
     }
 
     /**
-     * Get the location where the reward will be spawned.
-     * @return The location
-     */
-    public Location getLocation() {
-        throw new MCNotInstalledException();
-    }
-
-    /**
-     * Set the location where this reward will be spawned.
-     * @param location The new location
-     */
-    public void setLocation(Location location) {
-        throw new MCNotInstalledException();
-    }
-
-    /**
      * Get the sound that will act as a trigger sound for this reward, this sound will be heard before the crate is opened.
      * @return The Sort Sound
      */

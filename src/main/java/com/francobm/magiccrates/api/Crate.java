@@ -1,6 +1,7 @@
 package com.francobm.magiccrates.api;
 
 import com.francobm.magiccrates.cache.ItemReward;
+import com.francobm.magiccrates.cache.Locations;
 import com.francobm.magiccrates.utils.MCNotInstalledException;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -255,6 +256,24 @@ public abstract class Crate {
      * @return is Physical Crate?
      */
     public boolean isPhysical() {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * Previously it was located in com.francobm.magiccrates.api.Reward#getLocation
+     * Get the location where the reward will be spawned.
+     * @return The location
+     */
+    public Locations getCurrentLocation() {
+        throw new MCNotInstalledException();
+    }
+
+    /**
+     * Generate a location where the reward will be spawned
+     * NOTE: This will only generate new locations if you have more than 1 location set and randomLocations is activated.
+     * @return The new location generated or the default location set.
+     */
+    public Locations generateLocation() {
         throw new MCNotInstalledException();
     }
 }
