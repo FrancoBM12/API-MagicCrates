@@ -82,4 +82,12 @@ public class PlayerData {
     public EditorSettings getEditorSettings() {
         throw new MCNotInstalledException();
     }
+
+    /**
+     * Determines if your inventory items are locked (i.e. you cannot interact with them). Only true when the player is inside a transition.
+     *
+     */
+    public boolean isLockItems() {
+        throw new MCNotInstalledException();
+    }
 }
